@@ -1,12 +1,47 @@
+/* reset de todos os elementos - reset css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   background-image: url(./assets/bg_mobile_dark.jpg);
   background-repeat: no-repeat;
   background-position: top center;
   background-size: cover;
+
+  /* background: url(./assets/bg_mobile_dark.jpg) no-repeat top center/cover */
+}
+
+/* * = seletor universal (todos os elementos dentro do body neste caso) */
+body * {
+  font-family: "Inter", sans-serif;
+  color: #ffffff;
 }
 
 #container {
-    width:  360px;
-    height: 712px;
-    border: 1px solid red;
+  width: 360px;
+  border: 1px solid red;
+
+  /* para centralizar ao meio */
+  margin: auto;
+
+  padding-top: 56px;
+}
+
+#profile {
+  text-align: center;
+  padding: 24px;
+}
+
+/* em <img> (inline) não conseguimos usar o margin: auto para alinhamento */
+#profile img {
+  width: 112px;
+}
+
+#profile p {
+  font-weight: 500;
+  line-height: 24px;
+  margin-top: 8px;
 }
