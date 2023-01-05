@@ -22,7 +22,6 @@ body * {
 
 #container {
   width: 360px;
-  border: 1px solid red;
 
   /* para centralizar ao meio */
   margin: auto;
@@ -44,4 +43,41 @@ body * {
   font-weight: 500;
   line-height: 24px;
   margin-top: 8px;
+}
+
+/* lista de links */
+ul {
+  list-style: none;
+
+  display: flex;
+  flex-direction: column;
+  gap: 16px; 
+  /* gap = distancia dos elementos filhos do elemento pai com display flex - sem espaço em cima e nem em baixo */
+}
+
+ul li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 16px 24px;
+
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 8px;
+
+  /* dando efeito de blur no fundo botão */
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+
+  text-decoration: none;
+  font-weight: 500;
+
+  transition: background 0.2s;
+}
+
+/* pseudo-selector - hover */
+ul li a:hover {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1.5px solid white;
 }
