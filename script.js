@@ -23,10 +23,10 @@ function toggleMode() {
 
   if (html.classList.contains("light")) {
     // setAttribute irá mudar o src da nossa tag img e o alt
-    img.setAttribute("src", "./assets/avatar-light.png");
+    img.setAttribute("src", "./assets/avatar_light.png");
     img.setAttribute("alt", "Foto de Luigi Belanda acendendo uma vela, com uma capa da Ordem DeMolay");
   } else {
-    img.setAttribute("src", "./assets/avatar-dark.png");
+    img.setAttribute("src", "./assets/avatar_dark.png");
     img.setAttribute("alt", "Foto de Luigi Belanda segurando a bandeira nacional, usando a capa da Ordem DeMolay e também seu óculos pessoal. Ao fundo aparecem outras pessoas e um pouco na frente do Luigi uma vela acessa");
   }
 }
