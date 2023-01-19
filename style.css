@@ -88,11 +88,18 @@ body * {
   top: 50%;
   left: 0;
   transform: translateY(-50%);
+
+  /* chamamos a animação criada e definimos o seu tempo */
+  animation: slide-back 0.2s;
 }
 
 .light #switch button {
-  right: 0;
-  left: initial;
+  /* chamamos a animação criada, definimos o seu tempo e colocamos o "forwards" para manter as props de quando a animação terminar */
+  animation: slide-in 0.4s forwards;
+}
+
+#switch button:hover {
+  outline: 8px solid var(--hightlight-color);
 }
 
 #switch span {
@@ -189,5 +196,27 @@ footer {
 
   .light {
     --bg-url: url(./assets/bg_desktop_light.jpg);
+  }
+}
+
+/* animation */
+@keyframes slide-in {
+  /* começa em left 0 */
+  from {
+    left: 0;
+  }
+
+  /* termina em left 0 */
+  to {
+    left: 50%;
+  }
+}
+
+@keyframes slide-back {
+  from {
+    left: 50%;
+  }
+  to {
+    left: 0;
   }
 }
