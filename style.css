@@ -80,7 +80,7 @@ body * {
 
   background: white var(--switch-bg-url) no-repeat center;
   
-  border: 0;
+  border: 1px solid var(--stroke-color);
   border-radius: 50%;
 
   position: absolute;
